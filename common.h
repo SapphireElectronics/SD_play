@@ -2,15 +2,15 @@
 #define _COMMON_H_
 
 
-#include <htc.h>
+//#include <htc.h>
 #define _XTAL_FREQ 33000000		//with osctune maxed out
 
-typedef signed char Int8;
-typedef unsigned char UInt8;
-typedef unsigned char Boolean;
-typedef unsigned long UInt32;
-typedef unsigned short long UInt24;
-typedef unsigned short UInt16;
+typedef int8 Int8;
+typedef uns8 UInt8;
+typedef uns8 Boolean;
+typedef uns32 UInt32;
+typedef uns24 UInt24;
+typedef uns16 UInt16;
 
 #define inline
 

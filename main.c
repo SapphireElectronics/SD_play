@@ -1,11 +1,14 @@
 #include "common.h"
-#include "ufat/ufat.h"
+#include "ufat.h"
 #include "SD.h"
 
 
-__CONFIG(FOSC_INTOSC & WDTE_SWDTEN & PWRTE_OFF & MCLRE_OFF & CP_OFF & CPD_OFF & BOREN_OFF & CLKOUTEN_OFF & IESO_OFF & FCMEN_OFF);
-__CONFIG(WRT_OFF & PLLEN_OFF & STVREN_ON & BORV_19 & LVP_OFF);
-__IDLOC(0000);
+//__CONFIG(FOSC_INTOSC & WDTE_SWDTEN & PWRTE_OFF & MCLRE_OFF & CP_OFF & CPD_OFF & BOREN_OFF & CLKOUTEN_OFF & IESO_OFF & FCMEN_OFF);
+//__CONFIG(WRT_OFF & PLLEN_OFF & STVREN_ON & BORV_19 & LVP_OFF);
+//__IDLOC(0000);
+
+#pragma config =		0x0fac
+#pragma config reg2 =	0x1eff
 
 UInt8 eeRead(UInt8 addr){
 
